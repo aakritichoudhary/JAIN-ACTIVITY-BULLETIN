@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <script src="https://kit.fontawesome.com/9b8ab6e128.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,10 @@
          body {
         margin: 0px;
         padding: 0px;
-        background-color: antiquewhite;
         font-family: 'PT Serif', serif;
+        background-image: url(web_bg.png);
+        /* background-repeat: no-repeat; */
+        
 
     }
     .jgi_logo{
@@ -22,7 +24,7 @@
        
     }
     .heading{
-        font-size: 44px;
+        font-size: 39px;
         display: inline;
         color: antiquewhite;
         margin-left: 107px;
@@ -37,8 +39,8 @@
        
      
         /* padding-left: 856px; */
-        background-color: rgb(53, 12, 109);
-        border: 2px solid rgb(53, 12, 109);
+        background-color:#701c853f;
+        border: 5px solid #851c2e55;
         margin-top: -71px;
         /* margin-left: px; */
        
@@ -53,19 +55,27 @@
         margin: 15px;
         padding: 5px;
         text-decoration:none;
-        color: antiquewhite;
+        color:antiquewhite;
         border-radius: 5px;
+        
         /* background-color: rgb(53, 12, 109);
         border: 2px solid rgb(53, 12, 109); */
+        
     }
     .navbar{
         /* border: 2px solid red; */
         margin-left: 251px;
     }
+    .video{
+        padding-left: 100px;
+    margin-top: 100px;
+    height: 381px;
+    width: 484px;
+    }
     .right{
         /* border: 2px solid red; */
         margin-left: 863px;
-        margin-top: 183px;
+        margin-top: -250px;
         margin-right: 86px;
     }
     .official{
@@ -75,9 +85,12 @@
        padding-right: 58px;
        font-size: 46px;
        text-align: center;
-       border: 2px solid #cd3700;
-       background-color: #cd3700;
-       color: antiquewhite;
+       border: 5px solid #851c2e55;
+       
+       background-color:#701c853f;
+       
+       color:#ccb1cc;
+       border-radius: 10px;
     }
     .unofficial{
         font-family: 'PT Serif', serif; 
@@ -86,14 +99,37 @@
        padding-right: 26px;
        margin-top: 96px;
        font-size: 46px;
-       border: 2px solid #cd3700;
-       background-color: #cd3700;
-       color: antiquewhite;
+       border: 5px solid #851c2e55;
+       
+       background-color:#701c853f;
+       
+       color:#ccb1cc;
+       border-radius: 10px;
        
     }
     .official:hover, .unofficial:hover{
-        background-color: #ca5b33;
+        background-color:#851c2e55;
         cursor: pointer;
+    }
+    .footer{
+      
+        padding-left: 48px;
+        margin-top: 120px;
+        background-color:#701c853f ;
+       
+        
+        
+    }
+    .foot{
+        font-family: 'PT Serif', serif;
+        font-size: 22px;
+        color: #ccb1cc;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .icons{
+        padding-right: 33px;
+        color: #ccb1cc;
     }
    
     </style>
@@ -105,7 +141,7 @@
     <nav class="nav">
         <logo class="logo">
            
-            <h1 class="heading">ACTIVITY BULLETIN</h1>
+            <h1 class="heading">STUDENT ACTIVITY BULLETIN</h1>
          </logo>
          <navbar class="navbar">
        <a href="" class="button">HOME</a>
@@ -116,6 +152,9 @@
     </nav>
 
 </header>
+<div class="left">
+    <video class="video" src="web_video.mp4" autoplay></video>
+</div>
 <div class="right">
     <div >
        <button class="official">OFFICIAL</button>
@@ -124,6 +163,20 @@
        <button class="unofficial">UNOFFICIAL</button>
     </div>
 </div>
+<footer class="footer">
+<p class="foot" >FOLLOW US ON SOCIAL MEDIA</p>
+<div class="icons">
+<a href="#"><i class="fa fa-facebook w3-hover-opacity icons"></i></i></a> 
+<a href="#"><i class="fa fa-phone w3-hover-opacity icons"></i></i></a> 
+<a href="#"><i class="fa fa-youtube w3-hover-opacity icons"></i></i></a> 
+<a href="#"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
+<a href="#"><i class="fa fa-snapchat w3-hover-opacity icons"></i></a>  
+<a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons" ></i></a>  
+<a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>  
+<a href="#"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>  
+ 
+</div>
+</footer>
  
 </body>
 </html>
