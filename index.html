@@ -1,182 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/9b8ab6e128.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTIVITY BULLETIN</title>
-    <style>
-         body {
-        margin: 0px;
-        padding: 0px;
-        font-family: 'PT Serif', serif;
-        background-image: url(https://github.com/aakritichoudhary/JAIN-ACTIVITY-BULLETIN/blob/main/web_bg.png);
-        /* background-repeat: no-repeat; */
-        
+    <title>JGI BULLETIN</title>
 
-    }
-    .jgi_logo{
-        margin-top: 3px;
-        margin-left: 10px;
-        height: 87px;
-       
-    }
-    .heading{
-        font-size: 39px;
-        display: inline;
-        color: antiquewhite;
-        margin-left: 107px;
-        
-        /* border: 2px solid red; */
-    }
-   
-    .nav{
-        font-size: 20px;
-       /* display: inline; */
-         
-       
-     
-        /* padding-left: 856px; */
-        background-color:#701c853f;
-        border: 5px solid #851c2e55;
-        margin-top: -71px;
-        /* margin-left: px; */
-       
-        
-        }
-    .button:hover{
-    
-        
-        background-color: rgb(71, 34, 123);
-    }
-    .button{
-        margin: 15px;
-        padding: 5px;
-        text-decoration:none;
-        color:antiquewhite;
-        border-radius: 5px;
-        
-        /* background-color: rgb(53, 12, 109);
-        border: 2px solid rgb(53, 12, 109); */
-        
-    }
-    .navbar{
-        /* border: 2px solid red; */
-        margin-left: 251px;
-    }
-    .video{
-        padding-left: 100px;
-    margin-top: 100px;
-    height: 381px;
-    width: 484px;
-    }
-    .right{
-        /* border: 2px solid red; */
-        margin-left: 863px;
-        margin-top: -250px;
-        margin-right: 86px;
-    }
-    .official{
-        font-family: 'PT Serif', serif; 
-        margin-left: 136px; 
-       padding-left: 58px;
-       padding-right: 58px;
-       font-size: 46px;
-       text-align: center;
-       border: 5px solid #851c2e55;
-       
-       background-color:#701c853f;
-       
-       color:#ccb1cc;
-       border-radius: 10px;
-    }
-    .unofficial{
-        font-family: 'PT Serif', serif; 
-        margin-left: 136px; 
-       padding-left: 26px;
-       padding-right: 26px;
-       margin-top: 96px;
-       font-size: 46px;
-       border: 5px solid #851c2e55;
-       
-       background-color:#701c853f;
-       
-       color:#ccb1cc;
-       border-radius: 10px;
-       
-    }
-    .official:hover, .unofficial:hover{
-        background-color:#851c2e55;
-        cursor: pointer;
-    }
-    .footer{
-      
-        padding-left: 48px;
-        margin-top: 120px;
-        background-color:#701c853f ;
-       
-        
-        
-    }
-    .foot{
-        font-family: 'PT Serif', serif;
-        font-size: 22px;
-        color: #ccb1cc;
-        letter-spacing: 2px;
-        font-weight: bold;
-    }
-    .icons{
-        padding-right: 33px;
-        color: #ccb1cc;
-    }
-   
-    </style>
 </head>
-<body>
-    <header>
-        <img src="https://github.com/aakritichoudhary/JAIN-ACTIVITY-BULLETIN/blob/main/jain%20logo%20circle.png" alt="JGI" class="jgi_logo">
-        
-    <nav class="nav">
-        <logo class="logo">
-           
-            <h1 class="heading">STUDENT ACTIVITY BULLETIN</h1>
-         </logo>
-         <navbar class="navbar">
-       <a href="" class="button">HOME</a>
-       <a href="" class="button">ABOUT US</a>
-       <a href="" class="button">GALLERY</a>
-       <a href="" class="button">CONTACT US</a>
-    </navbar>
-    </nav>
 
-</header>
-<div class="left">
-    <video class="video" src="https://github.com/aakritichoudhary/JAIN-ACTIVITY-BULLETIN/blob/main/web_video.mp4" autoplay></video>
-</div>
-<div class="right">
-    <div >
-       <button class="official">OFFICIAL</button>
-    </div>
-    <div >
-       <button class="unofficial">UNOFFICIAL</button>
-    </div>
-</div>
-<footer class="footer">
-<p class="foot" >FOLLOW US ON SOCIAL MEDIA</p>
-<div class="icons">
-<a href="#"><i class="fa fa-facebook w3-hover-opacity icons"></i></i></a> 
-<a href="#"><i class="fa fa-phone w3-hover-opacity icons"></i></i></a> 
-<a href="#"><i class="fa fa-youtube w3-hover-opacity icons"></i></i></a> 
-<a href="#"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
-<a href="#"><i class="fa fa-snapchat w3-hover-opacity icons"></i></a>  
-<a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons" ></i></a>  
-<a href="#"><i class="fa fa-twitter w3-hover-opacity icons"></i></a>  
-<a href="#"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>  
- 
-</div>
-</footer>
- 
+<body>
+    <!-- NAVIGATION BAR -->
+    <navbar class="navbar">
+
+        <!-- LOGO & HEADING -->
+        <div class="navLeft">
+            <img src="https://source.unsplash.com/900x900/?happy,javascript" alt="JGI" class="jgi_logo">
+            <h1 class="heading1">JGI Bulletin</h1>
+        </div>
+
+        <!-- HOME, GALLERY, ABOUT, SEARCH -->
+        <div class="navCenter">
+
+            <ul class="navList">
+                <li><a href="#home" class="button">Home</a></li>
+                <li><a href="#gallery" class="button">Gallery</a></li>
+                <li>
+                    <!--  <select name="about"> -->
+                    <a href="#about" class="button">About</a>
+                    <!-- <option value="about" id="about">About</option>
+                        <option value="college" id="college">College</option>
+                        <option value="developers" id="developers">Developers</option>
+                        <option value="faqs" id="faqs">FAQs</option> -->
+
+                    <!-- </select> -->
+                </li>
+                <li> <a href="#"><i class="fa fa-search w3-hover-opacity searchIcon"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- SIGN UP -->
+        <div class="navRight">
+            <button class="btn btnSmall">Sign Up</button>
+        </div>
+
+    </navbar>
+
+    <!-- HOME PAGE -->
+    <section class="secHome" id="home">
+
+        <!-- ANIMATION -->
+        <div class="secLeft">
+            <img src="https://source.unsplash.com/900x900/?nature,education,forest,html" alt="animation">
+        </div>
+
+
+        <!-- OFFICIAL BUTTON-->
+        <div class="secRight">
+            <div class="official homeButton">
+                <a href="">News Flash</a>
+
+            </div>
+
+            <!-- UNOFFICIAL BUTTON -->
+            <div class="unofficial homeButton">
+                <a href="">Buzz Zone</a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT PAGE -->
+    <section class="secAbout" id="about">
+
+        <!-- ABOUT COLLEGE -->
+        <div class="college">
+            <h2 class="heading2 aboutHeading">About College</h2>
+
+            <div class="sec1">
+                <div class="para">
+                    <h3 class="heading3">The end of search is here</h3>
+                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam excepturi,
+                        blanditiis ipsam culpa deserunt placeat. Cupiditate animi magnam cumque earum velit. Esse
+                        deleniti officiis vel recusandae minima saepe vero est architecto, earum commodi. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Vel a culpa earum magnam velit incidunt. Corrupti
+                        fuga iusto doloremque. Aliquid est ut enim at placeat.</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/900x900/?coding,apple" alt="Laptop Image" class="imgFluid">
+                </div>
+
+            </div>
+            <div class="sec2">
+                <div class="para para-reverse">
+                    <h3 class="heading3">Transforming Education in India</h3>
+                    <p class="paras paras-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        totam excepturi,
+                        blanditiis ipsam culpa deserunt placeat. Cupiditate animi magnam cumque earum velit. Esse
+                        deleniti officiis vel recusandae minima saepe vero est architecto, earum commodi. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Itaque laborum, numquam in odit fugiat facere culpa
+                        porro aspernatur minus fugit, repudiandae dolorum incidunt omnis non?</p>
+                </div>
+                <div class="thumbnail thumbnail-reverse">
+                    <img src="https://source.unsplash.com/900x900/?coding,apple,html" alt="Laptop Image"
+                        class="imgFluid">
+                </div>
+
+            </div>
+            <div class="sec3">
+                <div class="para">
+                    <h3 class="heading3">The end of search is here</h3>
+                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam excepturi,
+                        blanditiis ipsam culpa deserunt placeat. Cupiditate animi magnam cumque earum velit. Esse
+                        deleniti officiis vel recusandae minima saepe vero est architecto, earum commodi. Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Porro neque dolore tempora omnis atque veniam
+                        tenetur adipisci blanditiis? Iste voluptatem accusamus similique, excepturi facere
+                        reprehenderit.</p>
+                </div>
+
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/900x900/?coding,apple,javascript" alt="Laptop Image"
+                        class="imgFluid">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ABOUT DEVELOPERS -->
+        <div class="developers">
+            <h2 class="heading2">About Us</h2>
+            <div class="devHeading">
+                <p class="paras">The Developers of The Website</p>
+                <h3 class="heading3">Our Team</h3>
+            </div>
+
+                <div class="row2">
+                    <div class="column">
+                        <div class="card">
+
+                            <div class="container">
+                                <h3 class="heading3">Aakriti Choudhary </h3>
+                                <p class="title">Front-end Developer</p>
+                                <p class="paras">The brains of the operation</p>
+                                <p class="paras">ak@example.com</p>
+                                <p><button class="btn btnMedium">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <div class="container">
+                                <h3 class="heading3">Raji Kaur</h3>
+                                <p class="title">UI/UX Desginer</p>
+                                <p class="paras">The lead desginer </p>
+                                <p class="paras">rk@example.com</p>
+                                <p><button class="btn btnMedium">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="row1">
+                    <div class="column">
+                        <div class="card">
+                            <div class="container">
+                                <h3 class="heading3">Shruti Suresh</h3>
+                                <p class="title">Back-end Developer</p>
+                                <p class="paras">Responsible for the data </p>
+                                <p class="paras">ss@example.com</p>
+                                <p><button class="btn btnMedium">Contact</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="card">
+                            <div class="container">
+                                <h3 class="heading3">Rathod Krishika</h2>
+                                    <p class="title">Front-end Developer</p>
+                                    <p class="paras">Maintains the website</p>
+                                    <p class="paras">rk@example.com</p>
+                                    <p><button class="btn btnMedium">Contact</button></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- FAQs -->
+        <div class="faqs">
+            <h2 class="heading2">FAQs</h2>
+            <div class="faqSec">
+            <h3 class="heading3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quisquam.</h3>
+            <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                iusto officia repellat suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                iusto officia repellat suscipit!</p>
+            </div>
+            <div class="faqSec">
+            <h3 class="heading3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quisquam.</h3>
+            <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                iusto officia repellat suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                iusto officia repellat suscipit!</p>
+            </div>
+            <div class="faqSec">
+            <h3 class="heading3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quisquam.</h3>
+            <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                iusto officia repellat suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                iusto officia repellat suscipit!</p>
+            </div>
+            <div class="faqSec">
+                <h3 class="heading3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quisquam.</h3>
+                <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                    a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                    iusto officia repellat suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                    a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                    iusto officia repellat suscipit!</p>
+                </div>
+                <div class="faqSec">
+                    <h3 class="heading3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quisquam.</h3>
+                    <p class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                        a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                        iusto officia repellat suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi maxime vitae officia
+                        a. Culpa dolorem voluptatem excepturi. Autem voluptatibus voluptates unde quis quidem harum accusamus
+                        iusto officia repellat suscipit!</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOLLOW US ON SOCIAL MEDIA -->
+    <section class="socialMedia">
+
+
+        <h2 class="heading2">
+            Follow Us On Social Media</h2>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook w3-hover-opacity icons soc_icons"></i></i></a>
+            <a href="#"><i class="fa fa-phone w3-hover-opacity icons soc_icons"></i></i></a>
+            <a href="#"><i class="fa fa-youtube w3-hover-opacity icons soc_icons"></i></i></a>
+            <a href="#"><i class="fa fa-instagram w3-hover-opacity icons soc_icons"></i></a>
+            <a href="#"><i class="fa fa-snapchat w3-hover-opacity icons soc_icons"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity icons soc_icons"></i></a>
+            <a href="#"><i class="fa fa-twitter w3-hover-opacity icons soc_icons"></i></a>
+            <a href="#"><i class="fa fa-linkedin w3-hover-opacity icons soc_icons"></i></a>
+            <!-- <p class="inquiry">CHAT WITH US</p>
+            <i class="fa-brands fa-rocketchat inquiry_icon"></i> -->
+
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <h2 class="heading2">Contact Us</h2>
+    </section>
+
 </body>
+
 </html>
