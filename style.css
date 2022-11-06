@@ -391,6 +391,11 @@
       margin-top: 12px;
 
     }
+    .btnMedium:hover{
+      color: white;
+      border: 2px solid white;
+      cursor: pointer;
+    }
 
     .faqs {
       margin-top: 50px;
