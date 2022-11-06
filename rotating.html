@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D IMAGE SLIDER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, #2c5364, #0f2027);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+
+        }
+
+        .slider {
+            margin-top: 150px;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 30s linear infinite;
+
+
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: perspective(1000px) rotataeY(0deg);
+
+
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+
+        }
+
+        .slider span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100;
+            transform-origin: center;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+        }
+
+        .slider span imh {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 100px;
+            object-fit: cover;
+            transition: 2s;
+        }
+
+        .slider span:hover img {
+            transform: translateY(-50px) sclae(1.2);
+        }
+
+        .krishika {
+            width: 60%;
+
+        }
+
+        .sections {
+            display: flex;
+            flex-direction: column;
+        }
+/* 
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading img {
+            width: 5%;
+            color: white;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="heading">
+
+        <img src="gallery icon.png" alt="gallery_icon">
+        <h2 class="gallery_heading">GALLERY</h2>
+    </div> -->
+
+    <div class="sections">
+        <div class="slider">
+            <span style="--i:1;"><img src="jain 1.jpg" class="krishika"></span>
+            <span style="--i:2;"><img src="jain 2.jpg" class="krishika"></span>
+            <span style="--i:3;"><img src="jain 3.jpeg" class="krishika"></span>
+            <span style="--i:4;"><img src="jain 4.jpeg" class="krishika"></span>
+            <span style="--i:5;"><img src="jain 5.jpeg" class="krishika"></span>
+            <span style="--i:6;"><img src="jain 6.jpeg" class="krishika"></span>
+            <span style="--i:7;"><img src="jain 7.jpeg" class="krishika"></span>
+            <span style="--i:8;"><img src="jain8.jpeg" class="krishika"></span>
+        </div>
+        <div class="slider">
+            <span style="--i:9;"><img src="jain9.jpeg" class="krishika"></span>
+            <span style="--i:10;"><img src="jain10.jpeg" class="krishika"></span>
+            <span style="--i:11;"><img src="jain11.jpeg" class="krishika"></span>
+            <span style="--i:12;"><img src="jain12.jpeg" class="krishika"></span>
+            <span style="--i:13;"><img src="event 1.jpeg" class="krishika"></span>
+            <span style="--i:14;"><img src="event 2.jpeg" class="krishika"></span>
+            <span style="--i:15;"><img src="event 3.jpeg" class="krishika"></span>
+            <span style="--i:16;"><img src="event 4.jpeg" class="krishika"></span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
