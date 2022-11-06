@@ -418,12 +418,12 @@
     }
 
     .socialIcons a {
-      font-size: 90px;
-      padding: 23px;
+      font-size: 70px;
+      padding: 18px;
       border: 2px solid antiquewhite;
       border-radius: 356px;
       max-width: 100%;
-      margin: 56px;
+      margin: 53px;
       box-shadow: 0 4px 8px 0 rgba(8, 1, 1, 0.93);
       color: black;
     }
