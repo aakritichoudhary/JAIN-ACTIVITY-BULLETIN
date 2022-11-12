@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(45deg, #ff216d, #2196f3);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 11vh;
+    background-color:rgb(185, 185, 212);
+}
+
+.navLeft {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLeft img {
+    border: 2px solid whitesmoke;
+    border-radius: 294px;
+    width: 33%;
+}
+
+.navCenter {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navCenter ul {
+    position: absolute;
+    display: flex;
+    padding: 4px;
+}
+
+.navCenter li {
+    list-style: none;
+    padding: 0px 89px 0 0;
+
+}
+
+.navCenter li a {
+    text-decoration: none;
+    color: linear-gradient(45deg, #ff216d, #2196f3);
+}
+
+.button {
+
+    color: linear-gradient(45deg, #ff216d, #2196f3)te;
+    font-size: 25px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.subList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    margin-top: 35px;
+
+
+}
+
+.subList li {
+    margin-left: -8px;
+    padding: 11px 47px;
+    background-color:rgb(185, 185, 212);
+
+    font-size: 25px;
+    font-family: 'Ubuntu Mono', monospace;
+    position: relative;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-250px);
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.navCenter.active .subList li {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.toggle {
+    position: fixed;
+
+}
+
+.toggle::before {
+    content: 'Department';
+}
+
+.toggle.active::before {
+    content: 'Department';
+}
+
+.navRight {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnSmall {
+    padding: 7px 11px;
+    color:whitesmoke;
+    background: none;
+    border: 2px solid whitesmoke;
+    font-size: 19px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 22px;
+}
+.heading1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color: #e2b5e3;
+    font-size: 59px;
+    text-decoration: underline;
+
+
+
+}
+.heading2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color: #f4e5f5;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.heading3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-decoration: underline;
+}
+/* Newsletter */
+.top h2{
+    padding-top: 67px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.left{
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    width: 70%;
+}
+.left textarea{
+    border:5px solid rgb(183, 126, 236);
+    border-radius: 15px;
+    
+}
+.left textarea{
+    font-family: 'Mukta', sans-serif;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.btnMedium{
+    padding: 17px 65px;
+    color: whitesmoke;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    font-size: 30px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 22px;
+    margin: 45px;
+    cursor: pointer;
+    font-weight:400 ;
+    text-transform: uppercase;
+    transform: translate(0);
+    overflow: hidden;
+}
+.btnMedium::before{
+    content: "";
+    position: absolute;
+    background-color: whitesmoke;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+    transform: rotate(-16deg);
+    filter: blur(4px);
+
+
+  }
+  .btnMedium:hover::before{
+    left: calc(100% + 32px);
+    transition: 0.75s;
+  }
+
+/* Department */
+.paras {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    padding-left: 284px;
+   
+  }
+
+  .para {
+    color: antiquewhite;
+    font-size: 18px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 12px;
+
+  }
+
+  .thumbnail {
+    width: 35%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .thumbnail img {
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 16px;
+  }
+
